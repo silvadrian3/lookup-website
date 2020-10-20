@@ -23,21 +23,22 @@ body {
 }
 
 .text-vertical-center h1 {
-    margin: 0;
-    padding: 0 0 25px 0;
-    font-size: 4.5em;
+    color: #222;
+    font-size: 72px;
     font-weight: 700;
-    text-shadow:2px 1px #333;
-	color: #f0f0f0;
+    padding-top: 100px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px #F0F0F0;
 }
 
 .text-vertical-center h2 {
-    margin: 0;
-    padding: 0 0 25px 0;
-    font-size: 2.7em;
-    font-weight: 600;
-    text-shadow:2px 1px #333;
-	color: #f0f0f0;
+    color: #222;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1.5px 1px #F0F0F0;
 }
 
 /* Custom Button Styles */
@@ -167,7 +168,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg2.jpg) no-repeat center center scroll;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -183,7 +184,7 @@ hr.small {
 
 .callout {
     display: table;
-    width: 100%
+    width: 100%;
     height: 400px;
     color: #fff;
     background: url(../img/callout.jpg) no-repeat center center scroll;
@@ -242,28 +243,37 @@ cursor:pointer;
 text-decoration:underline;
 }
 
-/* download */
+/* pricing */
 
-.download {
-    padding: 10% 0;
+.pricing {
+    padding: 5% 0 10% 0;
 }
 
-.download-item {
+.pricing-item {
     margin-bottom: 30px;
 }
 
-.img-download {
+.img-pricing {
     margin: 0 4% 3% 0;
 	cursor:pointer;
 }
 
-.img-download:hover {
+.img-pricing:hover {
     opacity: 0.8;
 }
 
 
-.download-caption{
+.pricing-caption{
 margin-bottom:7%;
+}
+
+.pricing-column {
+    border: solid 1px #ddd;
+    box-shadow: #777;
+    border-radius: 5px;
+    padding: 10px 15px;
+    min-height: 300px;
+    height: 300px;
 }
 
 /* About */
@@ -286,7 +296,13 @@ margin-bottom:7%;
 }
 
 .features p{
-	margin-bottom:10%;
+    margin-bottom:10%;
+    font-size: 16px;
+}
+
+.features .feature-heading{
+    color: #777;
+    font-size: 18px;
 }
 
 /* Contact */
@@ -335,6 +351,7 @@ bottom:0;
 
 }
 
+
 /**************************************** Mobile ****************************************/
 @media screen and (max-width:480px) {
 .features {
@@ -361,15 +378,15 @@ bottom:0;
 	margin:2% 0;
 }
 
-.download {
+.pricing {
     padding: 5% 0;
 }
 
-.download-item {
+.pricing-item {
     margin-bottom: 20px;
 }
 
-.download-item p{
+.pricing-item p{
     margin: 20px 0;
 }
 
