@@ -246,7 +246,7 @@ text-decoration:underline;
 /* pricing */
 
 .pricing {
-    padding: 5% 0 10% 0;
+    padding: 40px 0 100px 0;
 }
 
 .pricing-item {
@@ -262,20 +262,24 @@ text-decoration:underline;
     opacity: 0.8;
 }
 
-
 .pricing-caption{
 margin-bottom:7%;
 }
 
 .pricing-column {
     border: solid 1px #ddd;
+    background-color: #FFFFFF;
     box-shadow: #777;
     border-radius: 5px;
-    padding: 10px 15px;
-    min-height: 300px;
-    height: 300px;
+    padding: 20px 40px;
+    margin-top: 10px;
+    height: 450px;
 }
 
+.pricing-column p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
 /* About */
 
 .about {
@@ -288,11 +292,11 @@ margin-bottom:7%;
 /* features */
 
 .features {
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .features img{
-	margin-top:15%;
+	margin-top:10%;
 }
 
 .features p{
