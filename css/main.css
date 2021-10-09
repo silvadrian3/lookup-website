@@ -13,7 +13,9 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; */
 }
 
 .text-vertical-center {
@@ -25,20 +27,21 @@ body {
 .text-vertical-center h1 {
     color: #222;
     font-size: 72px;
-    font-weight: 700;
-    padding-top: 100px;
+    font-weight: bolder;
     text-align: center;
     letter-spacing: 3px;
     text-shadow: 2px 1px #F0F0F0;
+    padding-top: 100px;
 }
 
 .text-vertical-center h2 {
     color: #222;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: bolder;
     text-align: center;
     letter-spacing: 1px;
     text-shadow: 1.5px 1px #F0F0F0;
+    
 }
 
 /* Custom Button Styles */
@@ -311,8 +314,9 @@ margin-bottom:7%;
 
 /* Contact */
 
-.contact h1 {
-	padding-bottom:90px;
+.contact h1, .contact h3, .contact h4 {
+	padding-bottom:30px;
+    color: #777;
 }
 
 /* terms and conditions */

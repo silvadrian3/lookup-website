@@ -18,7 +18,9 @@
     
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;300&display=swap');
+        </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,19 +39,19 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick = "closeNav()">Lookup</a>
+                <a href="#top" onclick="closeNav()">Lookup</a>
             </li>
 			<li>
-                <a href="#features" onclick = "closeNav()">About the Product</a>
+                <a href="#features" onclick="closeNav()">About the Product</a>
             </li>
             <li>
-                <a href="#pricing" onclick = "closeNav()">Plans &amp; Pricing</a>
+                <a href="#pricing" onclick="closeNav()">Plans &amp; Pricing</a>
             </li>
             <li>
-                <a href="#contact" onclick = "closeNav()">Connect with Us</a>
+                <a href="#contact" onclick="closeNav()">Connect with Us</a>
             </li>
             <li>
-                <a href="#contact">Log In</a>
+                <a href="#" onclick="login();closeNav()">Log In</a>
             </li>
         </ul>
 
@@ -63,7 +65,7 @@
         <div class="text-vertical-center">
             <h1>Our Business</h1>
             <h2>IS TO BUILD YOURS</h2>
-            <a href="#pricing" class="btn btn-dark btn-lg">Let's Start!</a>
+            <a href="#pricing" class="btn btn-dark btn-lg"><b>Let's Start!</b></a>
         
         </div>
     </header>
@@ -80,7 +82,7 @@
                     <div class="col-lg-6">
                         <div class="col-lg-12">
                             <p class="text-left" style="margin-top:12.5%; font-size: 20px;">
-                                <span style="font-size: 26px; font-weight: 500;">Lookup</span> is a cloud-based business management system designed for small and medium-sized enterprises (SMEs) to organize products, track deliveries, create sales invoice and expense claims, manage customers and suppliers' information — all in one go.<br/><br/>It allows you to have an overview of your business and track cash movement any time of the day from the cloud.</p>
+                                <span style="font-size: 26px; font-weight: 500;">Lookup</span> is a cloud-based business management system designed for online sellers to organize products, track deliveries, create sales invoices and expense claims, manage customers and suppliers' information — all in one go.<br/><br/>It allows you to have an overview of your business and track cash movement any time of the day from the internet.</p>
                         </div>
                     </div>
                     <!-- <div class="col-lg-12 text-center">
@@ -131,8 +133,8 @@
 						<div class="col-lg-4">
                             <div class="pricing-column">
                                 <h1 class="text-success text-center" style="margin-bottom:0px">Starter</h1>
-                                <h1 class="text-center form-group" style="margin-top:0px; margin-bottom:20px"><small>&#8369;449.00/mo</small></h1>
-                                <input type="button" class="btn btn-lg btn-success btn-block" value="Free 30-day Trial">
+                                <h1 class="text-center form-group" style="margin-top:0px; margin-bottom:20px"><small>&#8369;15.00/day</small></h1>
+                                <input type="button" onclick="freeTrial()" class="btn btn-lg btn-success btn-block" value="Free 30-day Trial">
                                 <br/>
                                 <p><i class="fa fa-check text-success"></i> Organize Income &amp; Expenses</p>
                                 <p><i class="fa fa-check text-success"></i> Up to <b>250</b> Invoices a month</p>
@@ -145,8 +147,8 @@
                         <div class="col-lg-4">
                             <div class="pricing-column">
                                 <h1 class="text-success text-center" style="margin-bottom:0px">Standard</h1>
-                                <h1 class="text-center form-group" style="margin-top:0px; margin-bottom:20px"><small>&#8369;599.00/mo</small></h1>
-                                <input type="button" class="btn btn-lg btn-success btn-block" value="Free 30-day Trial">
+                                <h1 class="text-center form-group" style="margin-top:0px; margin-bottom:20px"><small>&#8369;20.00/day</small></h1>
+                                <input type="button" onclick="freeTrial()" class="btn btn-lg btn-success btn-block" value="Free 30-day Trial">
                                 <br/>
                                 <p><i class="fa fa-check text-success "></i> Organize Income &amp; Expenses</p>
                                 <p><i class="fa fa-check text-success"></i> <b>Unlimited</b> Invoices</p>
@@ -198,26 +200,52 @@
 	-->
     <!-- Map -->
     <section id="contact" class="contact text-center col-md-12 center-block">
-		<h1>Connect with Us</h1>
+        <div class="col-md-8 col-lg-offset-2">
+            <h1>We'd love to hear from you!</h1>
+            <h3>Whether you're curious about the business, the features, or even a free trial &mdash; we're ready to answer any and all questions.</h3>
+        </div>
+
 		<div class="col-md-1"></div>
 			<div class="col-md-2"></div>
 			<div class="social col-md-12">
-				<div id="social-buttons" class="row col-md-6">
-						<img src="img/social/facebook.png" id="fb" class="social-img" onclick="visit_socmedia(this)" style="cursor:pointer">
-						<img src="img/social/googleplus.png" id="gp" class="social-img" onclick="visit_socmedia(this)" style="cursor:pointer">
-						<img src="img/social/twitter.png" id="tw" class="social-img" onclick="visit_socmedia(this)" style="cursor:pointer">
-						<br/><br/><br/>
-						<img src="img/towicon.png" id="img-truck">
+				<div id="social-buttons" class="row col-md-7">
+						
+                    <form name="sentMessage" id="contactForm" class="form" novalidate>
+                        <div class="row">
+                            <div class="col-lg-9 col-lg-offset-2">
+                                <div class="col-lg-12 form-group">
+                                    <input type="text" id="business_name" class="form-control" placeholder="Your Business Name">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Email Address" required="required">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="How may I help you?" style="resize:none"></textarea>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <button class="btn btn-success btn-lg" type="button" id="btn_send"style="margin-top: 30px;">Connect with Us!</button>
+                                </div>
+                                <div class="col-md-12 form-group" id="success"></div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </form>
 				</div>
-				<div id="company-details" class="row col-md-6 text-center">
-					<h3>Address: 1190 Pablo Ocampo Sr. Ext., Makati City</h3>
-					<h3>Email: <a href="mailto:info@q11technologies.com?subject=Q11%20GPS%20Assist%20|%20Contact%20Us">info@q11technologies.com</a></h3>
-					<h3>Phone: 896 5966</h3>
+				<div id="company-details" class="col-md-4 text-center" style="margin-left:30px">
+					<!-- <img src="img/logo-text.png" style="margin-bottom:20px"> -->
+					<h3>What Happens after you fill out the form?</h3>
+                    <h4>We aren't going to spam you with emails or call you a thousand times. After you fill out the form, one of the members of our team will reach out to you.</h4>
+					
 				</div>
 			</div>
 	
 	</section>
-	<div class="road pull-left col-md-12 center-block"></div>
+	
 	
 	
     <script src="js/jquery.js"></script>
@@ -251,24 +279,31 @@
     });
 	
 	
-	function visit_socmedia(currentsrc){
-		var src_id = currentsrc.id;
-		if(src_id == "fb"){
-			window.open("//wwww.facebook.com");
-		} else if(src_id == "tw"){
-				window.open("//www.twitter.com");
-			} else if(src_id == "gp"){
-					window.open("//www.googleplus.com");
-				}
-    }
+	// function visit_socmedia(currentsrc){
+	// 	var src_id = currentsrc.id;
+	// 	if(src_id == "fb"){
+	// 		window.open("//wwww.facebook.com");
+	// 	} else if(src_id == "tw"){
+	// 			window.open("//www.twitter.com");
+	// 		} else if(src_id == "gp"){
+	// 				window.open("//www.googleplus.com");
+	// 			}
+    // }
     
     function closeNav(){
         $("#menu-close").click();
     }
 	
-	$("#img_btn_googleplay").click(function(){
-		window.open("https://play.google.com/store/apps/details?id=com.q11technologies.gpsassist.app");
-	});
+    function freeTrial(){
+        window.open("https://lookup-291804.web.app/#/signup");
+    }
+
+    function login(){
+        window.open("https://lookup-291804.web.app/#/login");
+    }
+	// $("#img_btn_googleplay").click(function(){
+		
+	// });
 	
 	$(document).ready(function(){
 		var d = new Date();
