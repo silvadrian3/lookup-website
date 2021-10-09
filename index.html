@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lookup is a cloud-based business management system designed for small and medium-sized enterprises (SMEs) to organize products, track deliveries, create sales invoice and expense claims, manage customers and suppliers' information — all in one go.">
+    <meta name="author" content="Adrian Silva">
+    <title>Lookup - Business Management System</title>
+	<link rel="icon" href="img/favicon.ico">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;300&display=swap');
+        </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick="closeNav()">Lookup</a>
+            </li>
+			<li>
+                <a href="#features" onclick="closeNav()">About the Product</a>
+            </li>
+            <li>
+                <a href="#pricing" onclick="closeNav()">Plans &amp; Pricing</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="closeNav()">Connect with Us</a>
+            </li>
+            <li>
+                <a href="#" onclick="login();closeNav()">Log In</a>
+            </li>
+        </ul>
+
+                <div class="text-center" style="position:absolute; bottom:0; margin-left:8%">
+                    <p class="text-muted text-center" id="footer"></p> 
+                </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Our Business</h1>
+            <h2>IS TO BUILD YOURS</h2>
+            <a href="#pricing" class="btn btn-dark btn-lg"><b>Let's Start!</b></a>
+        
+        </div>
+    </header>
+
+	<!-- features -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row text-center">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/laptop.png" class="img-responsive" />
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="col-lg-12">
+                            <p class="text-left" style="margin-top:12.5%; font-size: 20px;">
+                                <span style="font-size: 26px; font-weight: 500;">Lookup</span> is a cloud-based business management system designed for online sellers to organize products, track deliveries, create sales invoices and expense claims, manage customers and suppliers' information — all in one go.<br/><br/>It allows you to have an overview of your business and track cash movement any time of the day from the internet.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-12 text-center">
+                        <h2>Key Features<br/><br/><hr/></h2>
+                    </div> -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row" style="margin-top:5%">
+                            <div class="col-lg-4">
+                                <i class="fa fa-5x fa-line-chart text-success"></i><br/>
+                                <h3 class="text-success form-group">Point of Sale and Cash Flow Management</h3>
+                                <p>Organize your sales and expenses, track cash movement, run reports - all in one place.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="fa fa-5x fa-truck text-success"></i><br/>
+                                <h3 class="text-success form-group">Deliveries and Inventory Management</h3>
+                                <p>Easily track your deliveries and monitor your inventory to know which products have to be restocked.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="fa fa-5x fa-users text-success"></i><br/>
+                                <h3 class="text-success form-group">Customers, Suppliers, and Employees Management</h3>
+                                <p>Manage Customer and Suppliers transactions and track your Employees working hours.</p>
+                            </div>
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- pricing -->
+    <section id="pricing" class="pricing  bg-success">
+        <div class="container">
+            <div class="row">
+				
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Subscription Plans and Pricing<br/><br/></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+						<div class="col-lg-4">
+                            <div class="pricing-column">
+                                <h1 class="text-success text-center" style="margin-bottom:0px">Starter</h1>
+                                <h1 class="text-center form-group" style="margin-top:0px; margin-bottom:20px"><small>&#8369;15.00/day</small></h1>
+                                <input type="button" onclick="freeTrial()" class="btn btn-lg btn-success btn-block" value="Free 30-day Trial">
+                                <br/>
+                                <p><i class="fa fa-check text-success"></i> Organize Income &amp; Expenses</p>
+                                <p><i class="fa fa-check text-success"></i> Up to <b>250</b> Invoices a month</p>
+                                <p><i class="fa fa-check text-success"></i> Track Inventory</p>
+                                <p><i class="fa fa-check text-success"></i> Up to <b>50</b> Product listings</p>
+                                <p><i class="fa fa-check text-success"></i> Generate Financial Reports</p>
+                                <p><i class="fa fa-check text-success"></i> Customer &amp; Supplier Database</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="pricing-column">
+                                <h1 class="text-success text-center" style="margin-bottom:0px">Standard</h1>
+                                <h1 class="text-center form-group" style="margin-top:0px; margin-bottom:20px"><small>&#8369;20.00/day</small></h1>
+                                <input type="button" onclick="freeTrial()" class="btn btn-lg btn-success btn-block" value="Free 30-day Trial">
+                                <br/>
+                                <p><i class="fa fa-check text-success "></i> Organize Income &amp; Expenses</p>
+                                <p><i class="fa fa-check text-success"></i> <b>Unlimited</b> Invoices</p>
+                                <p><i class="fa fa-check text-success"></i> Track Inventory</p>
+                                <p><i class="fa fa-check text-success"></i> <b>Unlimited</b> Product listings</p>
+                                <p><i class="fa fa-check text-success"></i> Generate Financial Reports</p>
+                                <p><i class="fa fa-check text-success"></i> Customer &amp; Supplier Database</p>
+                            </div>
+						</div>
+						<div class="col-lg-4">
+                            <div class="pricing-column">
+                                <h1 class="text-success text-center" style="margin-bottom:0px">Premium</h1>
+                                <h1 class="text-center form-group" style="margin-top:0px; margin-bottom:30px"><small>Coming Soon!</small></h1>
+                                <p><i class="fa fa-check text-success"></i> Organize Income &amp; Expenses</p>
+                                <p><i class="fa fa-check text-success"></i> <b>Unlimited</b> Invoices</p>
+                                <p><i class="fa fa-check text-success"></i> Track Inventory</p>
+                                <p><i class="fa fa-check text-success"></i> <b>Unlimited</b> Product listings</p>
+                                <p><i class="fa fa-check text-success"></i> Generate Financial Reports</p>
+                                <p><i class="fa fa-check text-success"></i> Customer &amp; Supplier Database</p>
+                                <p><i class="fa fa-check text-success"></i> Record Employees' Timesheet</p>
+                                <p><i class="fa fa-check text-success"></i> Payroll System</p>
+                            </div>
+						</div>
+                        
+                    </div>
+                    <!-- /.row (nested) -->
+                    <!--<a href="#" class="btn btn-dark">View More Items</a><br/><br/>-->
+                </div>
+                
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+	<!--
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+	-->
+    <!-- Map -->
+    <section id="contact" class="contact text-center col-md-12 center-block">
+        <div class="col-md-8 col-lg-offset-2">
+            <h1>We'd love to hear from you!</h1>
+            <h3>Whether you're curious about the business, the features, or even a free trial &mdash; we're ready to answer any and all questions.</h3>
+        </div>
+
+		<div class="col-md-1"></div>
+			<div class="col-md-2"></div>
+			<div class="social col-md-12">
+				<div id="social-buttons" class="row col-md-7">
+						
+                    <form name="sentMessage" id="contactForm" class="form" novalidate>
+                        <div class="row">
+                            <div class="col-lg-9 col-lg-offset-2">
+                                <div class="col-lg-12 form-group">
+                                    <input type="text" id="business_name" class="form-control" placeholder="Your Business Name">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Email Address" required="required">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="How may I help you?" style="resize:none"></textarea>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <button class="btn btn-success btn-lg" type="button" id="btn_send"style="margin-top: 30px;">Connect with Us!</button>
+                                </div>
+                                <div class="col-md-12 form-group" id="success"></div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </form>
+				</div>
+				<div id="company-details" class="col-md-4 text-center" style="margin-left:30px">
+					<!-- <img src="img/logo-text.png" style="margin-bottom:20px"> -->
+					<h3>What Happens after you fill out the form?</h3>
+                    <h4>We aren't going to spam you with emails or call you a thousand times. After you fill out the form, one of the members of our team will reach out to you.</h4>
+					
+				</div>
+			</div>
+	
+	</section>
+	
+	
+	
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+	
+	
+	// function visit_socmedia(currentsrc){
+	// 	var src_id = currentsrc.id;
+	// 	if(src_id == "fb"){
+	// 		window.open("//wwww.facebook.com");
+	// 	} else if(src_id == "tw"){
+	// 			window.open("//www.twitter.com");
+	// 		} else if(src_id == "gp"){
+	// 				window.open("//www.googleplus.com");
+	// 			}
+    // }
+    
+    function closeNav(){
+        $("#menu-close").click();
+    }
+	
+    function freeTrial(){
+        window.open("https://lookup-291804.web.app/#/signup");
+    }
+
+    function login(){
+        window.open("https://lookup-291804.web.app/#/login");
+    }
+	// $("#img_btn_googleplay").click(function(){
+		
+	// });
+	
+	$(document).ready(function(){
+		var d = new Date();
+		var y = "Lookup &copy; " + d.getFullYear();	
+		$('#footer').html(y);
+		
+		if($("#img-cp").css("display") == "none"){
+			$("#social-buttons").removeClass("pull-right");
+			$("#company-details").removeClass("pull-right");
+			$("#btn_send").removeClass("pull-left");
+			$("#img-truck").addClass("img-responsive");
+		}
+	});
+	
+	
+    </script>
+	<script src="js/email.js"></script>
+	
+</body>
+</html>

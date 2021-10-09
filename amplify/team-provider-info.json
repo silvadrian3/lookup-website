@@ -1,0 +1,44 @@
+{
+    "production": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-lookup-website-production-224501-authRole",
+            "UnauthRoleArn": "arn:aws:iam::176714061573:role/amplify-lookup-website-production-224501-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::176714061573:role/amplify-lookup-website-production-224501-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-lookup-website-production-224501-deployment",
+            "UnauthRoleName": "amplify-lookup-website-production-224501-unauthRole",
+            "StackName": "amplify-lookup-website-production-224501",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:176714061573:stack/amplify-lookup-website-production-224501/7fbe29e0-290f-11ec-b57e-02963c2341f4",
+            "AmplifyAppId": "d3d4gbe3mq3ls4"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3d4gbe3mq3ls4",
+                    "type": "cicd"
+                }
+            }
+        }
+    },
+    "staging": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-lookup-website-staging-224634-authRole",
+            "UnauthRoleArn": "arn:aws:iam::176714061573:role/amplify-lookup-website-staging-224634-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::176714061573:role/amplify-lookup-website-staging-224634-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-lookup-website-staging-224634-deployment",
+            "UnauthRoleName": "amplify-lookup-website-staging-224634-unauthRole",
+            "StackName": "amplify-lookup-website-staging-224634",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:176714061573:stack/amplify-lookup-website-staging-224634/b6210bb0-290f-11ec-953c-02d252a547a6",
+            "AmplifyAppId": "d3d4gbe3mq3ls4"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3d4gbe3mq3ls4",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}
