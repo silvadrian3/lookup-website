@@ -10,14 +10,54 @@
             "StackName": "amplify-lookup-website-staging-224634",
             "StackId": "arn:aws:cloudformation:ap-southeast-1:176714061573:stack/amplify-lookup-website-staging-224634/b6210bb0-290f-11ec-953c-02d252a547a6",
             "AmplifyAppId": "d3d4gbe3mq3ls4"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3d4gbe3mq3ls4",
+                    "type": "cicd"
+                }
+            },
+            "auth": {
+                "cognito8ac2ba63": {}
+            }
         }
     },
     "hosting": {
         "amplifyhosting": {
             "service": "amplifyhosting",
-            "type": "cicd",
-            "cicd": "cicd",
-            "lastPushTimeStamp": "2021-10-09T14:59:48.532Z"
+            "type": "cicd"
+        }
+    },
+    "auth": {
+        "cognito8ac2ba63": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "IdentityPoolId": "ap-southeast-1:93808515-e578-4a06-a80b-19186f8f6f13",
+                "IdentityPoolName": "lookup_website_identitypool_cc7dea7c__staging"
+            },
+            "lastPushTimeStamp": "2021-10-12T14:49:41.536Z",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-lookup-website-staging-224634-deployment/amplify-cfn-templates/auth/cognito8ac2ba63-cloudformation-template.yml",
+                "logicalId": "authcognito8ac2ba63"
+            }
+        }
+    },
+    "analytics": {
+        "lookupWebsiteAnalyticsKinesis": {
+            "service": "Kinesis",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "kinesisStreamId": "lookupWebsiteAnalyticsKinesis-staging",
+                "kinesisStreamShardCount": "1",
+                "kinesisStreamArn": "arn:aws:kinesis:ap-southeast-1:176714061573:stream/lookupWebsiteAnalyticsKinesis-staging"
+            },
+            "lastPushTimeStamp": "2021-10-12T14:49:41.537Z",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-lookup-website-staging-224634-deployment/amplify-cfn-templates/analytics/kinesis-cloudformation-template.json",
+                "logicalId": "analyticslookupWebsiteAnalyticsKinesis"
+            }
         }
     }
 }
