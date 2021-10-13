@@ -226,8 +226,9 @@ color:#FFFFFF;
 
 /* Footer */
 
-footer {
-    padding: 10px 0;
+#footer {
+    padding: 5px 0;
+    color: #FFFFFF;
 }
 
 
@@ -282,6 +283,10 @@ margin-bottom:7%;
 .pricing-column p {
     margin-top: 5px;
     margin-bottom: 15px;
+}
+
+.pricing-column small {
+    font-weight: bolder;
 }
 /* About */
 
