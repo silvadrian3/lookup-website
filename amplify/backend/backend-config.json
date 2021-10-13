@@ -11,10 +11,5 @@
 			"providerPlugin": "awscloudformation"
 		}
 	},
-	"analytics": {
-		"lookupWebsiteAnalyticsKinesis": {
-			"service": "Kinesis",
-			"providerPlugin": "awscloudformation"
-		}
-	}
+	"analytics": {}
 }

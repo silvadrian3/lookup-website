@@ -15,42 +15,24 @@
 	"hosting": {
 		"amplifyhosting": {
 			"service": "amplifyhosting",
-			"type": "cicd",
-			"cicd": "cicd",
-			"lastPushTimeStamp": "2021-10-09T14:59:48.532Z"
+			"type": "cicd"
 		}
 	},
 	"auth": {
 		"cognito8ac2ba63": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-lookup-website-staging-224634-deployment/amplify-cfn-templates/auth/cognito8ac2ba63-cloudformation-template.yml",
-				"logicalId": "authcognito8ac2ba63"
-			},
-			"lastPushTimeStamp": "2021-10-12T14:48:26.244Z",
 			"output": {
 				"IdentityPoolId": "ap-southeast-1:93808515-e578-4a06-a80b-19186f8f6f13",
 				"IdentityPoolName": "lookup_website_identitypool_cc7dea7c__staging"
 			},
+			"lastPushTimeStamp": "2021-10-12T15:07:38.721Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-lookup-website-staging-224634-deployment/amplify-cfn-templates/auth/cognito8ac2ba63-cloudformation-template.yml",
+				"logicalId": "authcognito8ac2ba63"
+			},
 			"lastPushDirHash": "sxL7qr354AB9TiS/9hQNz3h26nY="
 		}
 	},
-	"analytics": {
-		"lookupWebsiteAnalyticsKinesis": {
-			"service": "Kinesis",
-			"providerPlugin": "awscloudformation",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-lookup-website-staging-224634-deployment/amplify-cfn-templates/analytics/kinesis-cloudformation-template.json",
-				"logicalId": "analyticslookupWebsiteAnalyticsKinesis"
-			},
-			"lastPushTimeStamp": "2021-10-12T14:48:26.244Z",
-			"output": {
-				"kinesisStreamId": "lookupWebsiteAnalyticsKinesis-staging",
-				"kinesisStreamShardCount": "1",
-				"kinesisStreamArn": "arn:aws:kinesis:ap-southeast-1:176714061573:stream/lookupWebsiteAnalyticsKinesis-staging"
-			},
-			"lastPushDirHash": "MtF2xq2K+dmGqfWgqs43kpY0qHY="
-		}
-	}
+	"analytics": {}
 }

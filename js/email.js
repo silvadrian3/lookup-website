@@ -123,7 +123,7 @@ $("#btn_send").click(function(){
 
 										setTimeout(function() {
 											$('#success').html("");
-										},3000);
+										},4000);
 									},
 								})
 								
