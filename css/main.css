@@ -171,7 +171,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url('https://s3.ap-southeast-1.amazonaws.com/lookup.ph/assets/website/backgroundcover.webp') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -200,7 +200,7 @@ hr.small {
 /* Contact */
 
 .contact {
-    padding: 80px 0 100px 0;
+    padding: 80px 0 20px 0;
 }
 
 .contact a:link, .contact a:visited{
@@ -226,8 +226,9 @@ color:#FFFFFF;
 
 /* Footer */
 
-footer {
-    padding: 10px 0;
+#footer {
+    padding: 5px 0;
+    color: #FFFFFF;
 }
 
 
@@ -282,6 +283,10 @@ margin-bottom:7%;
 .pricing-column p {
     margin-top: 5px;
     margin-bottom: 15px;
+}
+
+.pricing-column small {
+    font-weight: bolder;
 }
 /* About */
 
@@ -348,15 +353,6 @@ margin-bottom:7%;
 		
 .terms .textpoints {
 	margin-bottom:10%;
-}
-
-.road{
-margin:0 auto;
-width:100%;
-background:url(../img/road.png) repeat-x left;
-height:50px;
-bottom:0;
-
 }
 
 

@@ -17,6 +17,9 @@
                     "appId": "d3d4gbe3mq3ls4",
                     "type": "cicd"
                 }
+            },
+            "auth": {
+                "cognito8ac2ba63": {}
             }
         }
     },
@@ -38,6 +41,9 @@
                     "appId": "d3d4gbe3mq3ls4",
                     "type": "cicd"
                 }
+            },
+            "auth": {
+                "cognito8ac2ba63": {}
             }
         }
     }
