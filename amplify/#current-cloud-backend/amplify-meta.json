@@ -1,38 +1,38 @@
 {
-	"providers": {
-		"awscloudformation": {
-			"AuthRoleName": "amplify-lookup-website-staging-224634-authRole",
-			"UnauthRoleArn": "arn:aws:iam::176714061573:role/amplify-lookup-website-staging-224634-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::176714061573:role/amplify-lookup-website-staging-224634-authRole",
-			"Region": "ap-southeast-1",
-			"DeploymentBucketName": "amplify-lookup-website-staging-224634-deployment",
-			"UnauthRoleName": "amplify-lookup-website-staging-224634-unauthRole",
-			"StackName": "amplify-lookup-website-staging-224634",
-			"StackId": "arn:aws:cloudformation:ap-southeast-1:176714061573:stack/amplify-lookup-website-staging-224634/b6210bb0-290f-11ec-953c-02d252a547a6",
-			"AmplifyAppId": "d3d4gbe3mq3ls4"
-		}
-	},
-	"hosting": {
-		"amplifyhosting": {
-			"service": "amplifyhosting",
-			"type": "cicd"
-		}
-	},
-	"auth": {
-		"cognito8ac2ba63": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"output": {
-				"IdentityPoolId": "ap-southeast-1:93808515-e578-4a06-a80b-19186f8f6f13",
-				"IdentityPoolName": "lookup_website_identitypool_cc7dea7c__staging"
-			},
-			"lastPushTimeStamp": "2021-10-12T15:07:38.721Z",
-			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-lookup-website-staging-224634-deployment/amplify-cfn-templates/auth/cognito8ac2ba63-cloudformation-template.yml",
-				"logicalId": "authcognito8ac2ba63"
-			},
-			"lastPushDirHash": "sxL7qr354AB9TiS/9hQNz3h26nY="
-		}
-	},
-	"analytics": {}
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lookup-website-staging-224634-authRole",
+      "UnauthRoleArn": "arn:aws:iam::176714061573:role/amplify-lookup-website-staging-224634-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::176714061573:role/amplify-lookup-website-staging-224634-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-lookup-website-staging-224634-deployment",
+      "UnauthRoleName": "amplify-lookup-website-staging-224634-unauthRole",
+      "StackName": "amplify-lookup-website-staging-224634",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:176714061573:stack/amplify-lookup-website-staging-224634/b6210bb0-290f-11ec-953c-02d252a547a6",
+      "AmplifyAppId": "d3d4gbe3mq3ls4"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd"
+    }
+  },
+  "auth": {
+    "cognito8ac2ba63": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "IdentityPoolId": "ap-southeast-1:93808515-e578-4a06-a80b-19186f8f6f13",
+        "IdentityPoolName": "lookup_website_identitypool_cc7dea7c__staging"
+      },
+      "lastPushTimeStamp": "2021-10-13T23:40:57.586Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-lookup-website-staging-224634-deployment/amplify-cfn-templates/auth/cognito8ac2ba63-cloudformation-template.yml",
+        "logicalId": "authcognito8ac2ba63"
+      },
+      "lastPushDirHash": "sxL7qr354AB9TiS/9hQNz3h26nY="
+    }
+  },
+  "analytics": {}
 }
