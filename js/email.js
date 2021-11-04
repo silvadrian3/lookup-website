@@ -1,5 +1,5 @@
-
-var mailservice = "http://localhost/lookup/lookup-mailer";
+var serviceHost = "https://api-lookup.ap-southeast-1.elasticbeanstalk.com";
+var mailservice = serviceHost + "/mailer";
 
 $("#btn_send").click(function(){
 	var business_name = $("#business_name").val(),

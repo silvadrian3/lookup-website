@@ -44,7 +44,28 @@ body {
     
 }
 
+.text-primary {
+    color: rgb(108, 164, 65)
+}
+
+.bg-theme {
+    background-color: #c9e2b6;
+}
 /* Custom Button Styles */
+
+.btn-theme {
+	margin-top:12%;
+    border-radius: 0;
+    color: #fff;
+    background-color: rgb(108 164 65);
+}
+
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active {
+    color: #fff;
+    filter: brightness(108%);
+}
 
 .btn-dark {
 	margin-top:12%;
@@ -234,8 +255,16 @@ color:#FFFFFF;
 
 /* Custom */
 
-.social img{
-margin:1% 4%;
+.social-links {
+color:rgb(108, 164, 65);
+cursor: pointer;
+margin-top:20px;
+}
+
+.social-links:hover,
+.social-links:focus,
+.social-links:active {
+    filter: brightness(108%);
 }
 
 .client_connect{
@@ -276,8 +305,9 @@ margin-bottom:7%;
     box-shadow: #777;
     border-radius: 5px;
     padding: 20px 40px;
-    margin-top: 10px;
+    margin-top: 20px;
     height: 450px;
+    margin-bottom: 20px;
 }
 
 .pricing-column p {
@@ -320,9 +350,14 @@ margin-bottom:7%;
 /* Contact */
 
 .contact h1, .contact h3, .contact h4 {
-	padding-bottom:30px;
+	padding-bottom:40px;
+}
+
+#company-details h3, #company-details h5 {
+    padding-bottom:20px;
     color: #777;
 }
+
 
 /* terms and conditions */
 
@@ -435,6 +470,8 @@ padding:3% 0;
 @media only screen and (max-width:985px) and (min-width : 481px) {
 /***** Tablet *****/
 }
+
+
 
 
 
