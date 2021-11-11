@@ -258,7 +258,8 @@ color:#FFFFFF;
 .social-links {
 color:rgb(108, 164, 65);
 cursor: pointer;
-margin-top:20px;
+margin:20px;
+
 }
 
 .social-links:hover,

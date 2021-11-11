@@ -12,15 +12,23 @@
     <meta property="og:title" content="Lookup | Business Management System"/>
     <meta property="og:description" content="Lookup is a cloud-based business management system designed for online sellers to organize products, track deliveries, create sales invoices and expense claims, manage customers and suppliers' information — all in one go. It allows you to have an overview of your business and track cash movement any time of the day online."/>
     <meta property="og:url" content="https://www.lookupcloudtech.com"/>
-    <meta property="og:image" content="https://s3.ap-southeast-1.amazonaws.com/lookup.ph/assets/website/lookup-logo.png"/>
+    <meta property="og:image" content="https://s3.ap-southeast-1.amazonaws.com/lookup.ph/assets/website/lookup-icon.png"/>
 
     <title>Lookup | Business Management System</title>
     <link rel="shortcut icon" href="img/favicon.ico" media="all" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" href="css/main.css" media="all" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;300&display=swap" media="all" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" media="all" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="all" /> -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
 
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;300&display=swap" media="all" /> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;300&display=swap" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;300&display=swap"></noscript>
+
+    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" media="all" /> -->
+    <link rel="preload" href="font-awesome/css/font-awesome.min.css" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"></noscript>
+    
+    <link rel="stylesheet" href="css/main.css" media="all" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -300,9 +308,9 @@
                 <h5>We aren't going to spam you with emails or call you a thousand times. After you fill out the form, one of the members of our team will reach out to you to address your inquiries.</h5>
                 
                 <div class="col-md-10 col-md-offset-1" style="margin-top: 10px;">
-                    <div class="col-md-4"><a href="https://www.facebook.com/lookupcloudtech"><i class="fa fa-facebook fa-3x social-links"></i></a></div>
-                    <div class="col-md-4"><a href="https://www.instagram.com/lookupcloudtech"><i class="fa fa-instagram fa-3x social-links"></i></a></div>
-                    <div class="col-md-4"><a href="mailto:lookupcloudtech@gmail.com"><i class="fa fa-envelope fa-3x social-links"></i></a></div>
+                    <a href="https://www.facebook.com/lookupcloudtech"><i class="fa fa-facebook fa-3x social-links"></i></a>&nbsp;
+                    <a href="https://www.instagram.com/lookupcloudtech"><i class="fa fa-instagram fa-3x social-links"></i></a>&nbsp;
+                    <a href="mailto:lookupcloudtech@gmail.com"><i class="fa fa-envelope fa-3x social-links"></i></a>
                 </div>
             </div>
         </div>
@@ -336,18 +344,6 @@
             });
         });
 	
-        
-        // function visit_socmedia(currentsrc){
-        // 	var src_id = currentsrc.id;
-        // 	if(src_id == "fb"){
-        // 		window.open("//wwww.facebook.com");
-        // 	} else if(src_id == "tw"){
-        // 			window.open("//www.twitter.com");
-        // 		} else if(src_id == "gp"){
-        // 				window.open("//www.googleplus.com");
-        // 			}
-        // }
-        
         function closeNav(){
             $("#menu-close").click();
         }
@@ -364,13 +360,6 @@
             var d = new Date();
             var y = "Lookup &copy; " + d.getFullYear();	
             $('#footer').html(y);
-            
-            // if($("#img-cp").css("display") == "none"){
-            //     $("#social-buttons").removeClass("pull-right");
-            //     $("#company-details").removeClass("pull-right");
-            //     $("#btn_send").removeClass("pull-left");
-            //     $("#img-truck").addClass("img-responsive");
-            // }
         });
 	
     </script>
